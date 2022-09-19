@@ -1,0 +1,32 @@
+<div class="container" style="max-width: 400px;">
+    <div class="row">
+        <div class="col-12">
+            <h1 class="text-center mb-5 mt-5">すぽっと(仮)</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <form method="post">
+                <div class="form-group mb-3">
+                    <label>ユーザ名</label>
+                    <input type="text" id="userName" name="userName" class="form-control">
+                </div>
+                <div class="form-group mb-3">
+                    <label>ルーム名を選択してください</label>
+                    <select id="roomName" name="roomName" class="form-control">
+                        <option value="野球">野球</option>
+                        <option value="サッカー">サッカー</option>
+                        <option value="バスケットボール">バスケットボール</option>
+                        <option value="陸上">陸上</option>
+                        <option value="テニス">テニス</option>
+                    </select>
+                </div>
+                <div class="text-center mt-4">
+                    <input type="button" value="入室する" class="btn btn-success btn-lg btn-block" onclick="enter();">
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script src="/javascripts/index.js"></script>

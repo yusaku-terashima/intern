@@ -1,0 +1,37 @@
+body {
+    padding-top: 5rem;
+    padding-bottom: 10rem;
+}
+
+.room-form {
+    width: 65%;
+}
+
+.card {
+    /* border: 0px; */
+    margin-bottom: 10px;
+    border-radius: 6px;
+    width: 80%;
+}
+
+@media screen and (max-width: 575px) {
+    body {
+        padding-top: 7rem;
+        padding-bottom: 10rem;
+    }
+
+    .room-form {
+        width: 100%;
+    }
+
+    .btn {
+        width: 100px;
+    }
+
+    .card {
+        /* border: 0px; */
+        margin-bottom: 10px;
+        border-radius: 6px;
+        width: 100%;
+    }
+}

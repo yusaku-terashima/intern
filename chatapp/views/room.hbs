@@ -1,0 +1,56 @@
+<header>
+    <nav class="navbar navbar-dark bg-success fixed-top">
+        <span class="navbar-brand mb-0 ml-4">すぽっと(仮)</span>
+        <span class="text-white mr-4 ml-4">ログインユーザ : {{ userName }}さん / ルーム名 : {{ roomName }}</span>
+    </nav>
+</header>
+<main>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-2">
+                <div class="card mx-auto" style="border: 0px;">
+                    <div class="card-body">
+                        <p class="card-title">入室中のユーザ</p>
+                        <p id="userList" class="card-text"></p>
+                    </div>
+                </div>
+            </div>
+            <div id="thread" class="col-sm-10"></div>
+        </div>
+    </div>
+</main>
+<footer>
+    <div class="bg-white pb-4 fixed-bottom">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <form method="post" action="/" class="mx-auto room-form">
+                        <div>
+                            <input id="userName" type="hidden" value={{ userName }}>
+                            <input id="roomName" type="hidden" value={{ roomName }}>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" rows="2" class="form-control" placeholder="投稿文を入力してください"></textarea>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <div>
+                                <input type="button" value="投稿" id="sendButton" class="btn btn-success" onclick="publish();">
+                                <input type="button" value="メモ" class="btn btn-success" onclick="memo();">
+                            </div>
+                            <div>
+                                <input type="button" value="退室する" class="btn btn-danger" onclick="exit();">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="/javascripts/index.js"></script>
+<script src="/javascripts/socket.js"></script>
+<script src="/javascripts/enter.js"></script>
+<script src="/javascripts/publish.js"></script>
+<script src="/javascripts/memo.js"></script>
+<script src="/javascripts/exit.js"></script>
