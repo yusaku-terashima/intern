@@ -1,3 +1,3 @@
 2022年8月～9月にかけて、とあるインターンで製作したチャットアプリです。  
-(chatapp/LICENSEに企業名は記述があります)  
+(chatapp/LICENSEに企業名の記述があります)  
 詳しい説明は、chatapp/README.mdをご覧ください。
